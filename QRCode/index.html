@@ -24,7 +24,14 @@
       flex-direction: column;
 
     }
+
     .container {
+      flex:1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
       width: clamp(220px,220px,220px);
       padding:8px;
       border-radius: 10px;
@@ -61,13 +68,17 @@
 <body>
 
   <div class="container">
-    <div class="image-container">
-      <img src="./images/image-qr-code.png" alt="">
+
+    <div class="card">
+      <div class="image-container">
+        <img src="./images/image-qr-code.png" alt="">
+      </div>
+      <div class="text-container">
+        <div class="main-title">Improve your front-end skills by building projects</div>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
     </div>
-    <div class="text-container">
-      <div class="main-title">Improve your front-end skills by building projects</div>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
+
   </div>
 
   
